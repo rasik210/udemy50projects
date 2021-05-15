@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  font-style: italic;
+  font-weight: unset;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-top: 0;
+}
+
+button {
+  background-color: unset;
+  border-width: 0px;
+  padding: 30px 0 0 30px;
+}
+
+.divTable {
+  display: table;
+}
+
+.divRow {
+  display: table-row;
+}
+
+.divCellContent {
+  display: table-cell;
+  width: 60%;
+  display: inline-block;
+}
+
+.divCellNav {
+  display: table-cell;
+  width: 20%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.quarterCircle {
+  background-color: RGB(245, 135, 147);
+  border-radius: 0 0 120px 0px;
+  height: 110px;
+  width: 110px;
+}
+
+.hambergur {
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 4px 0 5px 0;
+}
