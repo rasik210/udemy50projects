@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 img {
@@ -46,6 +47,7 @@ button {
   display: table-cell;
   width: 60%;
   display: inline-block;
+  margin-top: 100px;
 }
 
 .divCellNav {
@@ -67,4 +69,8 @@ button {
   height: 4px;
   background-color: white;
   margin: 4px 0 5px 0;
+}
+
+button:hover {
+  cursor: pointer;
 }
