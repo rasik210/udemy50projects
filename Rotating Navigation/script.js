@@ -1,22 +1,27 @@
-var isMenuVisible = 1
+var isMenuVisible = true
 
 function changeButtonShape() {
-  var menuButton = document.getElementById('menuButton')
-  var divNodes = menuButton.getElementsByTagName('div')
+  const menuButton = document.getElementById('menuButton')
+  const divNodes = menuButton.getElementsByTagName('div')
+  const contentDiv = document.getElementsByClassName('divCellContent')[0]
 
   if (isMenuVisible) {
-    divNodes[0].classList.remove('hambergur')
-    divNodes[1].classList.remove('hambergur')
     divNodes[2].classList.remove('hambergur')
-    divNodes[3].classList.add('cross1')
-    divNodes[4].classList.add('cross2')
-    isMenuVisible = 0
+    divNodes[3].classList.remove('hambergur')
+    divNodes[4].classList.remove('hambergur')
+    divNodes[0].classList.add('cross1')
+    divNodes[1].classList.add('cross2')
+    contentDiv.classList.add('rotate')
+    contentDiv.classList.remove('rotateBack')
+    isMenuVisible = false
   } else {
-    divNodes[0].classList.add('hambergur')
-    divNodes[1].classList.add('hambergur')
     divNodes[2].classList.add('hambergur')
-    divNodes[3].classList.remove('cross1')
-    divNodes[4].classList.remove('cross2')
-    isMenuVisible = 1
+    divNodes[3].classList.add('hambergur')
+    divNodes[4].classList.add('hambergur')
+    divNodes[0].classList.remove('cross1')
+    divNodes[1].classList.remove('cross2')
+    contentDiv.classList.remove('rotate')
+    contentDiv.classList.add('rotateBack')
+    isMenuVisible = true
   }
 }
