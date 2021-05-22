@@ -29,6 +29,10 @@ h3 {
   margin-top: 0;
 }
 
+p {
+  line-height: 1.5;
+}
+
 button {
   background-color: unset;
   border-width: 0px;
@@ -69,6 +73,30 @@ button {
   height: 4px;
   background-color: white;
   margin: 4px 0 5px 0;
+}
+
+.cross1 {
+  width: 24px;
+  height: 5.5px;
+  background-color: white;
+  margin: 4px 0 -8px 0;
+  transform: rotate(45deg);
+  /* -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; */
+}
+
+.cross2 {
+  width: 24px;
+  height: 5.5px;
+  background-color: white;
+  margin: 4px 0 -8px 0;
+  transform: rotate(-47deg);
+  /* -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; */
 }
 
 button:hover {
