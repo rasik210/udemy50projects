@@ -39,30 +39,26 @@ button {
   padding: 30px 0 0 30px;
 }
 
-@keyframes mymove {
-  50% {
-    transform-origin: 0 0 0;
-  }
+button:hover {
+  cursor: pointer;
 }
 
 .rotate {
-  transform-origin: 0 0; /*comment this for infinite swinging*/
-  transform: rotate(-45deg);
-  -webkit-transition: all 1.5s ease-in-out;
-  -moz-transition: all 1.5s ease-in-out;
-  -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-  animation: mymove 3s infinite;
+  transform-origin: 0 0;
+  transform: rotate(-20deg);
+  -webkit-transition: transform 1.5s ease-in-out;
+  -moz-transition: transform 1.5s ease-in-out;
+  -o-transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 .rotateBack {
-  transform-origin: 0 0; /*comment this for infinite swinging*/
+  transform-origin: 0 0;
   transform: rotate(0deg);
-  -webkit-transition: all 1.5s ease-in-out;
-  -moz-transition: all 1.5s ease-in-out;
-  -o-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-  animation: mymove 3s infinite;
+  -webkit-transition: transform 1.5s ease-in-out;
+  -moz-transition: transform 1.5s ease-in-out;
+  -o-transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
 }
 
 .divTable {
@@ -92,6 +88,8 @@ button {
   border-radius: 0 0 120px 0px;
   height: 110px;
   width: 110px;
+  z-index: 2;
+  position: relative;
 }
 
 .hambergur {
@@ -123,6 +121,51 @@ button {
   transition: all 1s ease-in-out;
 }
 
-button:hover {
-  cursor: pointer;
+.navBarInitialize {
+  background-color: black;
+  color: white;
+  height: 900px;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: -300px;
+  z-index: 1;
+}
+
+.navBarClosed {
+  transform-origin: 100% 0%;
+  transform: rotate(20deg);
+  -webkit-transition: transform 1.5s ease-in-out;
+  -moz-transition: transform 1.5s ease-in-out;
+  -o-transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+}
+
+.navBarOpen {
+  transform-origin: 100% 0%;
+  transform: rotate(-20deg);
+  -webkit-transition: transform 1.5s ease-in-out;
+  -moz-transition: transform 1.5s ease-in-out;
+  -o-transition: transform 1.5s ease-in-out;
+  transition: transform 1.5s ease-in-out;
+}
+
+.list-hide {
+  display: none;
+}
+
+.list {
+  list-style-type: none;
+  position: relative;
+  left: 5px;
+  top: 320px;
+  vertical-align: bottom;
+  color: white;
+  z-index: 2;
+  display: inline-block;
+}
+
+.image {
+  height: 20px;
+  width: 20px;
 }
