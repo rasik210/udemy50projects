@@ -46,19 +46,19 @@ button:hover {
 .rotate {
   transform-origin: 0 0;
   transform: rotate(-20deg);
-  -webkit-transition: transform 1.5s ease-in-out;
-  -moz-transition: transform 1.5s ease-in-out;
-  -o-transition: transform 1.5s ease-in-out;
-  transition: transform 1.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .rotateBack {
   transform-origin: 0 0;
   transform: rotate(0deg);
-  -webkit-transition: transform 1.5s ease-in-out;
-  -moz-transition: transform 1.5s ease-in-out;
-  -o-transition: transform 1.5s ease-in-out;
-  transition: transform 1.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .divTable {
@@ -135,34 +135,43 @@ button:hover {
 .navBarClosed {
   transform-origin: 100% 0%;
   transform: rotate(20deg);
-  -webkit-transition: transform 1.5s ease-in-out;
-  -moz-transition: transform 1.5s ease-in-out;
-  -o-transition: transform 1.5s ease-in-out;
-  transition: transform 1.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .navBarOpen {
   transform-origin: 100% 0%;
   transform: rotate(-20deg);
-  -webkit-transition: transform 1.5s ease-in-out;
-  -moz-transition: transform 1.5s ease-in-out;
-  -o-transition: transform 1.5s ease-in-out;
-  transition: transform 1.5s ease-in-out;
+  -webkit-transition: transform 0.5s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
 }
 
 .list-hide {
-  display: none;
+  left: -250px;
+  top: 500px;
+  position: relative;
+  -webkit-transition: left 0.45s ease-in-out;
+  -moz-transition: left 0.45s ease-in-out;
+  -o-transition: left 0.45s ease-in-out;
+  transition: left 0.45s ease-in-out;
 }
 
 .list {
   list-style-type: none;
   position: relative;
   left: 5px;
-  top: 320px;
+  top: 500px;
   vertical-align: bottom;
   color: white;
   z-index: 2;
-  display: inline-block;
+  -webkit-transition: left 1.3s ease-in-out;
+  -moz-transition: left 1.3s ease-in-out;
+  -o-transition: left 1.3s ease-in-out;
+  transition: left 1.3s ease-in-out;
 }
 
 .image {
