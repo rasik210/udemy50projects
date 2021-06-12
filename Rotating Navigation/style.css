@@ -46,19 +46,19 @@ button:hover {
 .rotate {
   transform-origin: 0 0;
   transform: rotate(-20deg);
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
 }
 
 .rotateBack {
   transform-origin: 0 0;
   transform: rotate(0deg);
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
 }
 
 .divTable {
@@ -135,19 +135,19 @@ button:hover {
 .navBarClosed {
   transform-origin: 100% 0%;
   transform: rotate(20deg);
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
 }
 
 .navBarOpen {
   transform-origin: 100% 0%;
   transform: rotate(-20deg);
-  -webkit-transition: transform 0.5s ease-in-out;
-  -moz-transition: transform 0.5s ease-in-out;
-  -o-transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
 }
 
 .list-hide {
