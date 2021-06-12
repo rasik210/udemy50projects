@@ -46,19 +46,19 @@ button:hover {
 .rotate {
   transform-origin: 0 0;
   transform: rotate(-20deg);
-  -webkit-transition: transform 0.7s linear;
-  -moz-transition: transform 0.7s linear;
-  -o-transition: transform 0.7s linear;
-  transition: transform 0.7s linear;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
+  transition: transform 0.5s linear;
 }
 
 .rotateBack {
   transform-origin: 0 0;
   transform: rotate(0deg);
-  -webkit-transition: transform 0.7s linear;
-  -moz-transition: transform 0.7s linear;
-  -o-transition: transform 0.7s linear;
-  transition: transform 0.7s linear;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
+  transition: transform 0.5s linear;
 }
 
 .divTable {
@@ -144,10 +144,10 @@ button:hover {
 .navBarOpen {
   transform-origin: 100% 0%;
   transform: rotate(-20deg);
-  -webkit-transition: transform 0.7s linear;
-  -moz-transition: transform 0.7s linear;
-  -o-transition: transform 0.7s linear;
-  transition: transform 0.7s linear;
+  -webkit-transition: transform 0.5s linear;
+  -moz-transition: transform 0.5s linear;
+  -o-transition: transform 0.5s linear;
+  transition: transform 0.5s linear;
 }
 
 .list-hide {
