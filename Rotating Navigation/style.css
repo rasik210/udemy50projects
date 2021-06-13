@@ -178,3 +178,45 @@ button:hover {
   height: 20px;
   width: 20px;
 }
+
+.hideCross {
+  position: absolute;
+  left: -32%;
+  top: 22px;
+  transform: rotate(90deg);
+  transform-origin: 100% 0%;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
+}
+
+.showCross {
+  position: absolute;
+  left: -32%;
+  top: 22px;
+  transform: rotate(-90deg);
+  transform-origin: 100% 0%;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
+}
+
+.hideMenu {
+  transform: rotate(-90deg);
+  transform-origin: 0% 0%;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
+}
+
+.showMenu {
+  transform: rotate(0deg);
+  transform-origin: 0% 0%;
+  -webkit-transition: transform 0.7s linear;
+  -moz-transition: transform 0.7s linear;
+  -o-transition: transform 0.7s linear;
+  transition: transform 0.7s linear;
+}

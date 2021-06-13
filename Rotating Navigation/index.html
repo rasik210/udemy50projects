@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Rotating Navigation</title>
   </head>
   <body>
@@ -18,12 +22,19 @@
       <div class="divRow">
         <div class="divCellNav">
           <div class="quarterCircle">
-            <button id="menuButton" onclick="changeButtonShape();">
-              <div id="cross1"></div>
-              <div id="cross2"></div>
-              <div class="hambergur"></div>
-              <div class="hambergur"></div>
-              <div class="hambergur"></div>
+            <button id="hambergurMenu" onclick="changeButtonShape();">
+              <i class="fa fa-bars" style="font-size: 30px; color: white"></i>
+            </button>
+            <button id="cross" class="hideCross" onclick="changeButtonShape();">
+              <i
+                class="fa fa-times"
+                style="
+                  font-size: 30px;
+                  color: white;
+                  position: absolute;
+                  left: 0;
+                "
+              ></i>
             </button>
           </div>
           <div id="navBar" class="navBarInitialize"></div>
