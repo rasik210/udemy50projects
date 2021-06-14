@@ -220,3 +220,20 @@ button:hover {
   -o-transition: transform 0.7s linear;
   transition: transform 0.7s linear;
 }
+
+.fa.fa-home.navIcon {
+  font-size: 26px;
+}
+
+.fa.fa-user.navIcon {
+  font-size: 26px;
+}
+
+.fa.fa-envelope.navIcon {
+  font-size: 24px;
+}
+
+.navMenuText {
+  text-align: right;
+  display: inline-block;
+}
