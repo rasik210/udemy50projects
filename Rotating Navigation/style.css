@@ -135,10 +135,11 @@ button:hover {
 .navBarClosed {
   transform-origin: 100% 0%;
   transform: rotate(20deg);
-  -webkit-transition: transform 0.7s linear;
-  -moz-transition: transform 0.7s linear;
-  -o-transition: transform 0.7s linear;
-  transition: transform 0.7s linear;
+  -webkit-transition: transform 1.5s linear;
+  -moz-transition: transform 1.5s linear;
+  -o-transition: transform 1.5s linear;
+  transition: transform 1.5s linear;
+  z-index: 1;
 }
 
 .navBarOpen {
@@ -151,13 +152,16 @@ button:hover {
 }
 
 .list-hide {
-  left: -250px;
+  left: -300px;
   top: 500px;
   position: relative;
-  -webkit-transition: left 0.45s ease-in-out;
-  -moz-transition: left 0.45s ease-in-out;
-  -o-transition: left 0.45s ease-in-out;
-  transition: left 0.45s ease-in-out;
+  -webkit-transition: left 0.7s ease-in;
+  -moz-transition: left 0.7s ease-in;
+  -o-transition: left 0.7s ease-in;
+  transition: left 0.7s ease-in;
+  color: white;
+  z-index: 2;
+  list-style-type: none;
 }
 
 .list {
