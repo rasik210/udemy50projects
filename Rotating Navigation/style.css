@@ -164,6 +164,45 @@ button:hover {
   list-style-type: none;
 }
 
+.list-item-home-hide {
+  left: -300px;
+  top: 500px;
+  position: relative;
+  -webkit-transition: left 0.7s ease-in;
+  -moz-transition: left 0.7s ease-in;
+  -o-transition: left 0.7s ease-in;
+  transition: left 0.7s ease-in;
+  color: white;
+  z-index: 2;
+  list-style-type: none;
+}
+
+.list-item-about-hide {
+  left: -300px;
+  top: 500px;
+  position: relative;
+  -webkit-transition: left 0.5s ease-in;
+  -moz-transition: left 0.5s ease-in;
+  -o-transition: left 0.5s ease-in;
+  transition: left 0.5s ease-in;
+  color: white;
+  z-index: 2;
+  list-style-type: none;
+}
+
+.list-item-contact-hide {
+  left: -300px;
+  top: 500px;
+  position: relative;
+  -webkit-transition: left 0.3s ease-in;
+  -moz-transition: left 0.3s ease-in;
+  -o-transition: left 0.3s ease-in;
+  transition: left 0.3s ease-in;
+  color: white;
+  z-index: 2;
+  list-style-type: none;
+}
+
 .list {
   list-style-type: none;
   position: relative;

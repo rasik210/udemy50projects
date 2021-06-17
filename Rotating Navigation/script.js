@@ -2,11 +2,43 @@ var isHambergurMenuVisible = true
 var isNavBarVisible = false
 
 function changeButtonShape() {
+  ToggleButtonShape()
+  ToggleNavBar()
+}
+
+function ToggleNavBar() {
+  const navBar = document.getElementById('navBar')
+  const navMenuHome = document.getElementById('navMenuHome')
+  const navMenuAbout = document.getElementById('navMenuAbout')
+  const navMenuContact = document.getElementById('navMenuContact')
+
+  if (isNavBarVisible) {
+    navBar.classList.add('navBarClosed')
+    navBar.classList.remove('navBarOpen')
+    navMenuHome.classList.remove('list')
+    navMenuHome.classList.add('list-item-home-hide')
+    navMenuAbout.classList.remove('list')
+    navMenuAbout.classList.add('list-item-about-hide')
+    navMenuContact.classList.remove('list')
+    navMenuContact.classList.add('list-item-contact-hide')
+    isNavBarVisible = false
+  } else {
+    navBar.classList.remove('navBarClosed')
+    navBar.classList.add('navBarOpen')
+    navMenuHome.classList.add('list')
+    navMenuHome.classList.remove('list-item-home-hide')
+    navMenuAbout.classList.add('list')
+    navMenuAbout.classList.remove('list-item-about-hide')
+    navMenuContact.classList.add('list')
+    navMenuContact.classList.remove('list-item-contact-hide')
+    isNavBarVisible = true
+  }
+}
+
+function ToggleButtonShape() {
   const hambergurMenu = document.getElementById('hambergurMenu')
   const cross = document.getElementById('cross')
   const contentDiv = document.getElementsByClassName('divCellContent')[0]
-  const navBar = document.getElementById('navBar')
-  const navMenu = document.getElementById('navMenu')
 
   if (isHambergurMenuVisible) {
     hambergurMenu.classList.add('hideMenu')
@@ -24,19 +56,5 @@ function changeButtonShape() {
     contentDiv.classList.remove('rotate')
     contentDiv.classList.add('rotateBack')
     isHambergurMenuVisible = true
-  }
-
-  if (isNavBarVisible) {
-    navBar.classList.add('navBarClosed')
-    navBar.classList.remove('navBarOpen')
-    navMenu.classList.remove('list')
-    navMenu.classList.add('list-hide')
-    isNavBarVisible = false
-  } else {
-    navBar.classList.remove('navBarClosed')
-    navBar.classList.add('navBarOpen')
-    navMenu.classList.add('list')
-    navMenu.classList.remove('list-hide')
-    isNavBarVisible = true
   }
 }
