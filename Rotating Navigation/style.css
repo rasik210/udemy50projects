@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* * {
-  box-sizing: border-box;
-} */
-
 body {
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
@@ -123,7 +119,6 @@ button:hover {
 
 .navBarInitialize {
   background-color: black;
-  color: white;
   height: 120vh;
   width: 40vh;
   position: absolute;
@@ -165,8 +160,8 @@ button:hover {
 }
 
 .list-item-home-hide {
-  left: -300px;
-  top: 500px;
+  left: -300%;
+  top: 140%;
   position: relative;
   -webkit-transition: left 0.7s ease-in;
   -moz-transition: left 0.7s ease-in;
@@ -178,8 +173,8 @@ button:hover {
 }
 
 .list-item-about-hide {
-  left: -300px;
-  top: 500px;
+  left: -300%;
+  top: 140%;
   position: relative;
   -webkit-transition: left 0.5s ease-in;
   -moz-transition: left 0.5s ease-in;
@@ -191,8 +186,8 @@ button:hover {
 }
 
 .list-item-contact-hide {
-  left: -300px;
-  top: 500px;
+  left: -300%;
+  top: 140%;
   position: relative;
   -webkit-transition: left 0.3s ease-in;
   -moz-transition: left 0.3s ease-in;
@@ -206,9 +201,8 @@ button:hover {
 .list {
   list-style-type: none;
   position: relative;
-  left: 5px;
-  top: 500px;
-  vertical-align: bottom;
+  left: -10%;
+  top: 140%;
   color: white;
   z-index: 2;
   -webkit-transition: left 1.3s ease-in-out;
