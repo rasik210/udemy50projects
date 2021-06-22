@@ -1,8 +1,8 @@
 var isHambergurVisible = true
 var isNavBarVisible = false
 
-function changeButtonShape() {
-  ChangeMenuToggler()
+function TogglePageControls() {
+  ChangeMenuTogglerIcon()
   ToggleNavBar()
 }
 
@@ -43,7 +43,7 @@ function ShowMenu() {
   navMenuContact.classList.remove('list-item-contact-hide')
 }
 
-function ChangeMenuToggler() {
+function ChangeMenuTogglerIcon() {
   const hambergurButton = document.getElementById('hambergurMenu')
   const cross = document.getElementById('cross')
   const contentDiv = document.getElementsByClassName('divCellContent')[0]
