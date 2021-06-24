@@ -29,6 +29,12 @@ p {
   line-height: 1.5;
 }
 
+ul {
+  height: 30vh;
+  position: fixed;
+  top: 20vh;
+}
+
 button {
   background-color: unset;
   border-width: 0px;
@@ -85,6 +91,10 @@ button:hover {
   height: 110px;
   width: 110px;
   z-index: 2;
+  position: fixed;
+}
+
+.quarterCircleNavOpen {
   position: relative;
 }
 
@@ -106,7 +116,7 @@ button:hover {
   position: absolute;
   top: 0px;
   left: -40vh;
-  z-index: 1;
+  z-index: -10;
 }
 
 .navBarClosed {
@@ -116,7 +126,6 @@ button:hover {
   -moz-transition: transform 1.5s linear;
   -o-transition: transform 1.5s linear;
   transition: transform 1.5s linear;
-  z-index: 1;
 }
 
 .navBarOpen {
@@ -167,10 +176,10 @@ button:hover {
   list-style-type: none;
 }
 
-.list {
+.list-item-show {
   list-style-type: none;
   position: relative;
-  left: -10%;
+  left: 3%;
   top: 140%;
   color: white;
   z-index: 2;

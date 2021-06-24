@@ -15,31 +15,31 @@ function ToggleNavBar() {
   if (isNavBarVisible) {
     navBar.classList.add('navBarClosed')
     navBar.classList.remove('navBarOpen')
-    HideMenu()
+    HideNavMenu()
     isNavBarVisible = false
   } else {
     navBar.classList.remove('navBarClosed')
     navBar.classList.add('navBarOpen')
-    ShowMenu()
+    ShowNavMenu()
     isNavBarVisible = true
   }
 }
 
-function HideMenu() {
-  navMenuHome.classList.remove('list')
+function HideNavMenu() {
+  navMenuHome.classList.remove('list-item-show')
   navMenuHome.classList.add('list-item-home-hide')
-  navMenuAbout.classList.remove('list')
+  navMenuAbout.classList.remove('list-item-show')
   navMenuAbout.classList.add('list-item-about-hide')
-  navMenuContact.classList.remove('list')
+  navMenuContact.classList.remove('list-item-show')
   navMenuContact.classList.add('list-item-contact-hide')
 }
 
-function ShowMenu() {
-  navMenuHome.classList.add('list')
+function ShowNavMenu() {
+  navMenuHome.classList.add('list-item-show')
   navMenuHome.classList.remove('list-item-home-hide')
-  navMenuAbout.classList.add('list')
+  navMenuAbout.classList.add('list-item-show')
   navMenuAbout.classList.remove('list-item-about-hide')
-  navMenuContact.classList.add('list')
+  navMenuContact.classList.add('list-item-show')
   navMenuContact.classList.remove('list-item-contact-hide')
 }
 
@@ -47,6 +47,7 @@ function ChangeMenuTogglerIcon() {
   const hambergurButton = document.getElementById('hambergurMenu')
   const cross = document.getElementById('cross')
   const contentDiv = document.getElementsByClassName('divCellContent')[0]
+  const quarterCircle = document.getElementById('quarterCircle')
 
   if (isHambergurVisible) {
     hambergurButton.classList.add('hideMenu')
@@ -55,6 +56,7 @@ function ChangeMenuTogglerIcon() {
     cross.classList.add('showCross')
     contentDiv.classList.add('rotate')
     contentDiv.classList.remove('rotateBack')
+    quarterCircle.classList.add('quarterCircleNavOpen')
     isHambergurVisible = false
   } else {
     hambergurButton.classList.remove('hideMenu')
@@ -63,6 +65,7 @@ function ChangeMenuTogglerIcon() {
     cross.classList.remove('showCross')
     contentDiv.classList.remove('rotate')
     contentDiv.classList.add('rotateBack')
+    quarterCircle.classList.remove('quarterCircleNavOpen')
     isHambergurVisible = true
   }
 }
