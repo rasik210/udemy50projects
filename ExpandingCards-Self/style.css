@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  height: 95vh;
+  margin: 20px;
+}
+
+div {
+  transition: width 0.75s linear;
+}
+
+.container {
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.panel {
+  height: 95%;
+  width: 8%;
+  display: inline-block;
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 75px;
+  cursor: pointer;
+}
+
+.expand {
+  width: 63%;
+}
