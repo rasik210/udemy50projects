@@ -14,6 +14,11 @@ div {
   transition: width 0.75s linear;
 }
 
+p {
+  transition: z-index 1s linear;
+  transition-timing-function: ease-in;
+}
+
 .container {
   height: 100%;
   padding: 10px;
@@ -28,9 +33,27 @@ div {
   overflow: hidden;
   border-radius: 75px;
   cursor: pointer;
+  color: white;
 }
 
 .expand {
   width: 68%;
   background-size: 100% 100%;
+}
+
+.picTitle {
+  position: relative;
+  text-align: left;
+  top: 85%;
+  left: 3%;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  z-index: 20;
+}
+
+.picTitleHide {
+  font-size: 0;
+  z-index: -20;
 }
