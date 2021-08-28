@@ -32,6 +32,16 @@ body {
 
 .stepTraversed {
   border: 4px solid #3498db;
+  position: relative;
+  top: 40%;
+  left: 33%;
+  display: inline-block;
+  margin: 20px 0;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: large;
 }
 
 .linePending {
@@ -46,6 +56,12 @@ body {
 
 .lineTraversed {
   background-color: #3498db;
+  display: inline-block;
+  top: 39.5%;
+  left: 33%;
+  position: relative;
+  height: 5px;
+  width: 120px;
 }
 
 .actionControls {
