@@ -3,12 +3,14 @@ var step = 1
 function nextStep() {
   if (step == 4) return
 
-  var nextLink = document.getElementById(step)
-  // var textSibling = nextLink.nextSibling
-  // textSibling.style.border = '2px solid red'
-  nextLink = nextLink.nextSibling.nextSibling
-  nextLink.classList.remove('linePending')
-  nextLink.classList.add('lineTraversed')
+  var stepCircle = document.getElementById(step)
+  var nextConnector = stepCircle.nextSibling
+  //keep searching untill we get line connector
+  while (nextConnector && nextConnector.nodeType != 1) {
+    nextConnector = nextConnector.nextSibling
+  }
+  nextConnector.classList.remove('linePending')
+  nextConnector.classList.add('lineTraversed')
 
   step++
   var circle = document.getElementById(step)
@@ -30,10 +32,16 @@ function nextStep() {
 function previousStep() {
   if (step == 1) return
 
-  var nextLink = document.getElementById(step - 1)
-  nextLink = nextLink.nextSibling.nextSibling
-  nextLink.classList.add('linePending')
-  nextLink.classList.remove('lineTraversed')
+  var previousStepCircle = document.getElementById(step - 1)
+
+  var nextConnector = previousStepCircle.nextSibling
+  //keep searching untill we get line connector
+  while (nextConnector && nextConnector.nodeType != 1) {
+    nextConnector = nextConnector.nextSibling
+  }
+
+  nextConnector.classList.add('linePending')
+  nextConnector.classList.remove('lineTraversed')
 
   var circle = document.getElementById(step)
   circle.classList.remove('stepTraversed')
