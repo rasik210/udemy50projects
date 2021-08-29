@@ -16,14 +16,14 @@ function nextStep() {
   circle.classList.add('stepTraversed')
   if (step == 4) {
     var next = document.getElementById('btnNext')
-    next.classList.remove('button')
+    next.classList.remove('buttonActive')
     next.classList.add('buttonDisabled')
   }
 
   if (step > 1) {
     var previous = document.getElementById('btnPrevious')
     previous.classList.remove('buttonDisabled')
-    previous.classList.add('button')
+    previous.classList.add('buttonActive')
   }
 }
 
@@ -41,14 +41,14 @@ function previousStep() {
 
   if (step == 2) {
     var previous = document.getElementById('btnPrevious')
-    previous.classList.remove('button')
+    previous.classList.remove('buttonActive')
     previous.classList.add('buttonDisabled')
   }
 
   if (step == 4) {
     var next = document.getElementById('btnNext')
     next.classList.remove('buttonDisabled')
-    next.classList.add('button')
+    next.classList.add('buttonActive')
   }
 
   step--
