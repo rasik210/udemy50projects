@@ -1,6 +1,8 @@
 var step = 1
 
 function nextStep() {
+  if (step == 4) return
+
   var nextLink = document.getElementById(step)
   // var textSibling = nextLink.nextSibling
   // textSibling.style.border = '2px solid red'
@@ -26,6 +28,8 @@ function nextStep() {
 }
 
 function previousStep() {
+  if (step == 1) return
+
   var nextLink = document.getElementById(step - 1)
   nextLink = nextLink.nextSibling.nextSibling
   nextLink.classList.add('linePending')
